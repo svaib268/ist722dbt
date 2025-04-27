@@ -1,9 +1,19 @@
 version: 2
+
 models:
   - name: dim_supplier
     description: "Supplier Dimension"
     columns:
       - name: supplierkey
+        description: "The surrogate key of the supplier."
         tests:
           - unique
           - not_null
+      - name: supplierid
+        description: "The business / source key of the supplier."
+      - name: companyname
+        description: "The name of the supplier company."
+      - name: contactname
+        description: "The contact person at the supplier."
+      - name: country
+        description: "The country where the supplier is located."

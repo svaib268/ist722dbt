@@ -2,5 +2,16 @@ version: 2
 
 models:
   - name: obt_order_fulfillment
-    description: "The order fulfillment fact table combined with all of its outrigger dimensions into one bit table. Transaction fact table with one row per order does not include product."
-
+    description: "One Big Table combining order fulfillment facts with related dimensions."
+    columns:
+      - name: orderid
+        description: "Order identifier."
+      - name: customerkey
+        description: "Surrogate key for the customer."
+      - name: employeekey
+        description: "Surrogate key for the employee handling the order."
+      - name: orderdatekey
+        description: "Surrogate key for the order date."
+      - name: requireddatekey
+        description: "Surrogate key for the required delivery date."
+      - name: shippeddatekey

@@ -1,4 +1,22 @@
 version: 2
+
 models:
   - name: obt_sales
-    description: "One Big Table (OBT) combining sales facts with all relevant dimensions."
+    description: "One Big Table combining sales facts with related dimensions."
+    columns:
+      - name: orderid
+        description: "Order identifier."
+      - name: productkey
+        description: "Surrogate key for the product."
+      - name: customerkey
+        description: "Surrogate key for the customer."
+      - name: supplierkey
+        description: "Surrogate key for the supplier."
+      - name: orderdatekey
+        description: "Surrogate key for the order date."
+      - name: quantity
+        description: "Quantity of items sold."
+      - name: unitprice
+        description: "Price per unit sold."
+      - name: discount
+        

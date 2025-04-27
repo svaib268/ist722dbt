@@ -1,11 +1,21 @@
 version: 2
+
 models:
   - name: dim_product
     description: "Product Dimension"
     columns:
       - name: productkey
+        description: "The surrogate key of the product."
         tests:
           - unique
           - not_null
-
-
+      - name: productid
+        description: "The business / source key of the product."
+      - name: productname
+        description: "The name of the product."
+      - name: supplierid
+        description: "The supplier ID linked to the product."
+      - name: categoryid
+        description: "The category ID of the product."
+      - name: unitprice
+        description: "The price per unit of the product."

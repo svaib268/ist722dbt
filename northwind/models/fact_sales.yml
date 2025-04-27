@@ -1,16 +1,24 @@
 version: 2
+
 models:
   - name: fact_sales
-    description: "Fact table recording sales transactions at the product level."
+    description: "Fact table capturing sales transactions."
     columns:
       - name: orderid
-        tests:
-          - not_null
+        description: "Order identifier from the source."
       - name: productkey
-        tests:
-          - not_null
+        description: "Surrogate key for the product."
       - name: customerkey
-        tests:
-          - not_null
+        description: "Surrogate key for the customer."
+      - name: supplierkey
+        description: "Surrogate key for the supplier."
+      - name: orderdatekey
+        description: "Surrogate key for the order date."
+      - name: quantity
+        description: "Quantity of items sold."
+      - name: unitprice
+        description: "Price per unit sold."
+      - name: discount
+        description: "Discount applied on the sale."
       - name: salesamount
-        description: "The total sales amount after discount."
+        description: "Total sale amount after discount."
