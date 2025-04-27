@@ -1,7 +1,7 @@
 version: 2
 models:
   - name: fact_sales
-    description: Fact table recording sales transactions at the product level.
+    description: "Fact table recording sales transactions at the product level."
     columns:
       - name: orderid
         tests:
@@ -13,4 +13,4 @@ models:
         tests:
           - not_null
       - name: salesamount
-        description: The total sales amount after discount.
+        description: "The total sales amount after discount."

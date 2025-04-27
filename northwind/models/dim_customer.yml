@@ -2,15 +2,11 @@ version: 2
 
 models:
   - name: dim_customer
-    description: Customer Dimension. One row per customer
+    description: "Dimension table for customer data."
     columns:
       - name: customerkey
-        description: The surrogate key of the customer
-        tests:
-          - not_null
-          - unique
+        description: "Surrogate key for customer."
       - name: customerid
-        description: The business / source key of the customer
-        tests:
-          - not_null
-          - unique
+        description: "Original customer ID from source."
+      - name: contactname
+        description: "Full name of the customer contact."

@@ -1,7 +1,7 @@
 version: 2
 models:
   - name: dim_product
-    description: Product Dimension
+    description: "Product Dimension"
     columns:
       - name: productkey
         tests:
