@@ -1,0 +1,9 @@
+version: 2
+models:
+  - name: dim_supplier
+    description: Supplier Dimension
+    columns:
+      - name: supplierkey
+        tests:
+          - unique
+          - not_null
